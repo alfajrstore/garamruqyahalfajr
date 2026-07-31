@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garam Ruqyah Al-Fajr - Ikhtiar Kesembuhan & Perlindungan</title>
+    <meta name="description" content="Garam Ruqyah Al-Fajr untuk terapi ruqyah mandiri, pembersihan energi negatif, dan ikhtiar kesembuhan bi'idznillah.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        gold: {
+                            500: '#d4af37',
+                            600: '#c5a028',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #064e3b;
+            background-image: linear-gradient(rgba(6, 78, 59, 0.85), rgba(6, 78, 59, 0.95)), url('https://images.unsplash.com/photo-1615806616959-1f8a4903328f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-emerald-50 antialiased text-lg">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-leaf text-emerald-600 text-3xl"></i>
+                    <span class="font-serif font-bold text-2xl text-emerald-900">Al-<span class="text-gold-500">Fajr</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#manfaat" class="text-gray-600 hover:text-emerald-600 font-semibold text-lg transition">Manfaat</a>
+                    <a href="#cara-pakai" class="text-gray-600 hover:text-emerald-600 font-semibold text-lg transition">Cara Pakai</a>
+                    <a href="#testimoni" class="text-gray-600 hover:text-emerald-600 font-semibold text-lg transition">Testimoni</a>
+                    <a href="#produk" class="bg-emerald-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-emerald-700 transition shadow-lg shadow-emerald-200">Beli Sekarang</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-emerald-600 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#manfaat" class="block px-4 py-4 text-lg font-semibold text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-md">Manfaat</a>
+                <a href="#cara-pakai" class="block px-4 py-4 text-lg font-semibold text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-md">Cara Pakai</a>
+                <a href="#testimoni" class="block px-4 py-4 text-lg font-semibold text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-md">Testimoni</a>
+                <a href="#produk" class="block px-4 py-4 text-lg font-bold text-emerald-600 bg-emerald-50 rounded-md mt-4 text-center">Pesan Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern min-h-[90vh] flex items-center pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2 text-center md:text-left pt-12 md:pt-0">
+                <span class="inline-block py-2 px-4 rounded-full bg-emerald-800/50 text-emerald-100 text-base font-semibold tracking-wider mb-6 border border-emerald-500/30">
+                    <i class="fa-solid fa-star text-gold-500 text-sm mr-1"></i> 100% Murni & Dibacakan Ayat Ruqyah
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
+                    Bersihkan Diri & Hunian dari <span class="text-gold-500">Energi Negatif</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-emerald-50 mb-10 leading-relaxed max-w-xl mx-auto md:mx-0 font-light">
+                    Garam Ruqyah Al-Fajr diformulasikan dari garam laut murni yang telah dibacakan ayat-ayat suci Al-Qur'an dan doa-doa ma'tsur. Ikhtiar terbaik untuk perlindungan keluarga.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#formulir" class="bg-gold-500 hover:bg-gold-600 text-white font-bold py-4 px-10 rounded-full transition transform hover:-translate-y-1 shadow-lg shadow-gold-500/30 text-center flex items-center justify-center gap-2 text-xl">
+                        Pesan Sekarang <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#manfaat" class="bg-transparent border-2 border-emerald-300 text-emerald-50 hover:bg-emerald-800 font-bold py-4 px-10 rounded-full transition text-center text-xl">
+                        Pelajari Lanjut
+                    </a>
+                </div>
+            </div>
+            
+            <div class="w-full md:w-1/2 relative pb-12 md:pb-0">
+                <div class="relative w-full max-w-md mx-auto aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 transform rotate-2 hover:rotate-0 transition duration-500 bg-gray-200">
+                    
+                    <!-- GAMBAR PRODUK ANDA DI SINI - MENGGUNAKAN PNG -->
+                    <img src="produk-alfajr.png" alt="Garam Ruqyah Al-Fajr" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1549520018-9128ee3e89a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/90 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6 text-white text-center">
+                        <p class="font-serif italic text-xl">"Sebaik-baik pengobatan adalah dengan Al-Qur'an."</p>
+                    </div>
+                </div>
+                <!-- Floating Elements -->
+                <div class="absolute -top-6 -right-6 bg-white p-5 rounded-2xl shadow-xl animate-bounce" style="animation-duration: 3s;">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-emerald-100 p-3 rounded-full text-emerald-600">
+                            <i class="fa-solid fa-shield-halved text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 font-medium">Terbukti</p>
+                            <p class="text-lg font-bold text-gray-800">Melindungi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mengapa Memilih Kami -->
+    <section class="py-12 bg-white mt-[-2rem] relative z-10 max-w-6xl mx-auto rounded-3xl shadow-xl px-4 sm:px-6 lg:px-8 mb-20 mx-4 md:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
+            <div class="p-6">
+                <div class="w-20 h-20 mx-auto bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 text-3xl mb-6">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">100% Garam Murni</h3>
+                <p class="text-gray-600 text-lg">Terbuat dari garam laut kristal murni tanpa campuran bahan kimia berbahaya.</p>
+            </div>
+            <div class="p-6">
+                <div class="w-20 h-20 mx-auto bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 text-3xl mb-6">
+                    <i class="fa-solid fa-book-quran"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Ruqyah Syar'iyyah</h3>
+                <p class="text-gray-600 text-lg">Telah dibacakan ayat-ayat Al-Baqarah dan doa perlindungan sesuai sunnah.</p>
+            </div>
+            <div class="p-6">
+                <div class="w-20 h-20 mx-auto bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 text-3xl mb-6">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Multiguna</h3>
+                <p class="text-gray-600 text-lg">Dapat digunakan untuk mandi, merendam kaki, hingga mengepel lantai rumah.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manfaat Section -->
+    <section id="manfaat" class="py-20 bg-emerald-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-emerald-600 font-bold tracking-wide uppercase mb-3 text-xl">Khasiat & Manfaat</h2>
+                <h3 class="text-3xl md:text-5xl font-serif font-bold text-emerald-900 mb-6 leading-tight">Ikhtiar Kesembuhan Bi'idznillah</h3>
+                <p class="text-gray-600 text-xl leading-relaxed">Garam ruqyah Al-Fajr diformulasikan khusus sebagai wasilah (perantara) untuk mengatasi berbagai keluhan medis maupun non-medis.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-emerald-100 group">
+                    <div class="w-16 h-16 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-eye-low-vision"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-4">Menangkal 'Ain</h4>
+                    <p class="text-gray-600 text-lg leading-relaxed">Membantu menetralisir energi negatif akibat pandangan mata yang hasad (iri) atau kagum berlebihan.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-emerald-100 group">
+                    <div class="w-16 h-16 bg-indigo-50 text-indigo-500 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-house-chimney-crack"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-4">Bersihkan Rumah</h4>
+                    <p class="text-gray-600 text-lg leading-relaxed">Sangat baik untuk mengepel lantai guna mengusir gangguan jin dan hawa panas/tidak nyaman di rumah.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-emerald-100 group">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-4">Atasi Susah Tidur</h4>
+                    <p class="text-gray-600 text-lg leading-relaxed">Merendam kaki dengan air hangat campuran garam ini dapat memberikan efek rileks yang dalam sehingga mudah tidur.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-emerald-100 group">
+                    <div class="w-16 h-16 bg-emerald-50 text-emerald-500 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-4">Terapi Kulit</h4>
+                    <p class="text-gray-600 text-lg leading-relaxed">Kandungan mineral alami membantu meredakan gatal-gatal, alergi, dan masalah kulit yang tidak kunjung sembuh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Penggunaan -->
+    <section id="cara-pakai" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 bg-gray-100 rounded-3xl">
+                    
+                    <!-- GAMBAR CARA PAKAI ANDA DI SINI - MENGGUNAKAN PNG -->
+                    <img src="cara-pakai.png" alt="Cara Pakai Garam Ruqyah" class="rounded-3xl shadow-2xl w-full h-auto object-cover" onerror="this.src='https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                    
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-emerald-600 font-bold tracking-wide uppercase mb-3 text-xl">Panduan Praktis</h2>
+                    <h3 class="text-3xl md:text-5xl font-serif font-bold text-emerald-900 mb-10 leading-tight">Cara Penggunaan Garam Ruqyah</h3>
+                    
+                    <div class="space-y-10">
+                        <!-- Step 1 -->
+                        <div class="flex gap-5">
+                            <div class="flex-shrink-0 w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg mt-1">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-3">Untuk Mandi</h4>
+                                <p class="text-gray-600 text-lg leading-relaxed">Campurkan 3 sendok makan Garam Ruqyah ke dalam 1 ember air biasa/hangat. Gunakan air ini pada <b>bilasan terakhir</b> saat mandi sore. Niatkan di dalam hati untuk membuang penyakit dan energi negatif.</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="flex gap-5">
+                            <div class="flex-shrink-0 w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg mt-1">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-3">Untuk Mengepel Lantai</h4>
+                                <p class="text-gray-600 text-lg leading-relaxed">Larutkan 2-3 sendok makan ke dalam seember air pel. Mulailah mengepel dari area dalam rumah menuju ke arah pintu keluar rumah sambil membaca Bismillah.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flex gap-5">
+                            <div class="flex-shrink-0 w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-2xl shadow-lg mt-1">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-gray-800 mb-3">Untuk Pagar Gaib (Ditabur)</h4>
+                                <p class="text-gray-600 text-lg leading-relaxed">Ambil sejumput garam, taburkan tipis-tipis di sudut-sudut ruangan, ambang pintu, atau jendela yang dirasa sering ada gangguan (seperti bau anyir atau hawa panas).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Produk -->
+    <section id="produk" class="py-20 bg-emerald-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-gold-500 font-bold tracking-wide uppercase mb-3 text-xl">Pilih Paket Anda</h2>
+                <h3 class="text-3xl md:text-5xl font-serif font-bold mb-6">Investasi Untuk Ketenangan Keluarga</h3>
+                <p class="text-emerald-100 text-xl">Pilih paket yang sesuai dengan kebutuhan ikhtiar Anda hari ini.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Paket 1 -->
+                <div class="bg-white text-gray-800 rounded-3xl p-8 shadow-xl transform transition hover:-translate-y-2 flex flex-col">
+                    <h4 class="text-3xl font-bold text-center mb-3">Paket Ikhtiar</h4>
+                    <p class="text-center text-gray-500 text-lg mb-8">Cocok untuk percobaan awal</p>
+                    <div class="text-center mb-10">
+                        <span class="text-5xl font-bold text-emerald-600">Rp 50.000</span>
+                    </div>
+                    <ul class="space-y-5 mb-10 flex-grow text-lg">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-500 text-xl"></i>
+                            <span>1 Pouch Garam (500gr)</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-500 text-xl"></i>
+                            <span>Panduan Penggunaan</span>
+                        </li>
+                        <li class="flex items-center gap-4 text-gray-400">
+                            <i class="fa-solid fa-xmark text-xl"></i>
+                            <span>Belum Gratis Ongkir</span>
+                        </li>
+                    </ul>
+                    <a href="#formulir" onclick="pilihPaket('Paket Ikhtiar')" class="block w-full py-4 px-6 text-center rounded-2xl border-2 border-emerald-600 text-emerald-600 font-bold text-xl hover:bg-emerald-50 transition">
+                        Pesan Sekarang
+                    </a>
+                </div>
+
+                <!-- Paket 2 (Best Seller) -->
+                <div class="bg-emerald-50 text-gray-800 rounded-3xl p-8 shadow-2xl transform scale-105 relative border-4 border-gold-500 z-10 flex flex-col mt-4 md:mt-0">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gold-500 text-white px-6 py-2 rounded-full text-base font-bold uppercase tracking-wider">
+                        Best Seller
+                    </div>
+                    <h4 class="text-3xl font-bold text-center mb-3">Paket Keluarga</h4>
+                    <p class="text-center text-gray-500 text-lg mb-8">Paling ideal untuk rutinitas</p>
+                    <div class="text-center mb-10">
+                        <div class="line-through text-gray-400 text-2xl mb-1">Rp 150.000</div>
+                        <span class="text-5xl font-bold text-emerald-600">Rp 120.000</span>
+                    </div>
+                    <ul class="space-y-5 mb-10 flex-grow text-lg">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-500 text-xl"></i>
+                            <span class="font-bold">1 Pouch Garam (1 Kg)</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-500 text-xl"></i>
+                            <span>Panduan Lengkap (Buku)</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-500 text-xl"></i>
+                            <span class="font-bold text-emerald-600">Subsidi Ongkir 20rb</span>
+                        </li>
+                    </ul>
+                    <a href="#formulir" onclick="pilihPaket('Paket Keluarga')" class="block w-full py-5 px-6 text-center rounded-2xl bg-emerald-600 text-white font-bold text-xl hover:bg-emerald-700 shadow-lg shadow-emerald-500/30 transition">
+                        Beli Sekarang (Diskon)
+                    </a>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="bg-white text-gray-800 rounded-3xl p-8 shadow-xl transform transition hover:-translate-y-2 flex flex-col mt-4 md:mt-0">
+                    <h4 class="text-3xl font-bold text-center mb-3">Paket Agen</h4>
+                    <p class="text-center text-gray-500 text-lg mb-8">Untuk dijual kembali / stok</p>
+                    <div class="text-center mb-10">
+                        <span class="text-5xl font-bold text-emerald-600">Rp 350.000</span>
+                    </div>
+                    <ul class="space-y-5 mb-10 flex-grow text-lg">
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-500 text-xl"></i>
+                            <span>5 Pouch Garam (Ukuran 1 Kg)</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-500 text-xl"></i>
+                            <span>Grup Bimbingan Khusus</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-check text-emerald-500 text-xl"></i>
+                            <span class="font-bold text-emerald-600">Gratis Ongkir se-Jawa</span>
+                        </li>
+                    </ul>
+                    <a href="#formulir" onclick="pilihPaket('Paket Agen')" class="block w-full py-4 px-6 text-center rounded-2xl border-2 border-emerald-600 text-emerald-600 font-bold text-xl hover:bg-emerald-50 transition">
+                        Daftar Agen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Pemesanan -->
+    <section id="formulir" class="py-20 bg-emerald-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-emerald-600 font-bold tracking-wide uppercase mb-3 text-xl">Pemesanan</h2>
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-6">Isi Data Pengiriman</h3>
+                <p class="text-gray-700 text-xl">Silakan isi formulir di bawah ini. Setelah ditekan "Kirim", akan otomatis masuk ke WhatsApp Admin kami.</p>
+            </div>
+            
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-emerald-100">
+                <form id="formPemesanan" class="space-y-8">
+                    <div>
+                        <label for="nama" class="block text-lg md:text-xl font-bold text-gray-800 mb-3">Nama Lengkap</label>
+                        <input type="text" id="nama" required placeholder="Tuliskan nama Anda" class="w-full px-5 py-4 text-lg md:text-xl rounded-xl border-2 border-gray-300 focus:ring-0 focus:border-emerald-500 outline-none transition bg-gray-50">
+                    </div>
+                    <div>
+                        <label for="nowa" class="block text-lg md:text-xl font-bold text-gray-800 mb-3">No. WhatsApp yang Aktif</label>
+                        <input type="tel" id="nowa" required placeholder="Contoh: 08123456789" class="w-full px-5 py-4 text-lg md:text-xl rounded-xl border-2 border-gray-300 focus:ring-0 focus:border-emerald-500 outline-none transition bg-gray-50">
+                    </div>
+                    <div>
+                        <label for="kecamatan" class="block text-lg md:text-xl font-bold text-gray-800 mb-3">Alamat Lengkap / Kecamatan</label>
+                        <textarea id="kecamatan" rows="3" required placeholder="Contoh: Jalan Melati No.10, RT 01 RW 02, Kec. Tebet, Jakarta Selatan" class="w-full px-5 py-4 text-lg md:text-xl rounded-xl border-2 border-gray-300 focus:ring-0 focus:border-emerald-500 outline-none transition bg-gray-50"></textarea>
+                    </div>
+                    <div>
+                        <label for="paket" class="block text-lg md:text-xl font-bold text-gray-800 mb-3">Paket yang Dipilih</label>
+                        <select id="paket" required class="w-full px-5 py-4 text-lg md:text-xl rounded-xl border-2 border-gray-300 focus:ring-0 focus:border-emerald-500 outline-none transition bg-gray-50 cursor-pointer">
+                            <option value="">-- Sentuh untuk Memilih Paket --</option>
+                            <option value="Paket Ikhtiar (1 Pouch 500gr)">Paket Ikhtiar (500gr) - Rp 50.000</option>
+                            <option value="Paket Keluarga (1 Pouch 1 Kg)">Paket Keluarga (1 Kg) - Rp 120.000</option>
+                            <option value="Paket Agen (5 Pouch 1 Kg)">Paket Agen (5 Kg) - Rp 350.000</option>
+                        </select>
+                    </div>
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-emerald-600 text-white font-bold py-5 px-8 rounded-2xl hover:bg-emerald-700 transition shadow-lg shadow-emerald-500/30 flex justify-center items-center gap-3 text-xl md:text-2xl">
+                            Kirim Pesanan ke WhatsApp <i class="fa-brands fa-whatsapp text-3xl"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-emerald-600 font-bold tracking-wide uppercase mb-3 text-xl">Kata Mereka</h2>
+                <h3 class="text-3xl md:text-5xl font-serif font-bold text-emerald-900 mb-6 leading-tight">Banyak yang Merasakan Manfaatnya</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testi 1 -->
+                <div class="bg-emerald-50 p-8 rounded-3xl shadow-sm border border-emerald-100">
+                    <div class="flex text-gold-500 mb-6 text-xl">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-lg italic mb-8">"Awalnya sering susah tidur dan anak rewel tiap malam. Setelah coba dipel rumahnya dan buat campuran mandi anak pakai garam ini, alhamdulillah tidurnya jadi pulas."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-emerald-200 rounded-full flex items-center justify-center text-emerald-800 font-bold text-xl">A</div>
+                        <div>
+                            <h5 class="font-bold text-gray-800 text-lg">Bunda Aisyah</h5>
+                            <span class="text-base text-gray-600">Ibu Rumah Tangga, Depok</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testi 2 -->
+                <div class="bg-emerald-50 p-8 rounded-3xl shadow-sm border border-emerald-100">
+                    <div class="flex text-gold-500 mb-6 text-xl">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-lg italic mb-8">"Saya punya alergi kulit yang sering gatal tiba-tiba. Ikhtiar rendam air garam ruqyah Al-Fajr ini rutin 3 hari, bi'idznillah gatalnya jauh berkurang dan kulit lebih nyaman."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-emerald-200 rounded-full flex items-center justify-center text-emerald-800 font-bold text-xl">R</div>
+                        <div>
+                            <h5 class="font-bold text-gray-800 text-lg">Rudi Setiawan</h5>
+                            <span class="text-base text-gray-600">Pegawai Swasta, Bandung</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testi 3 -->
+                <div class="bg-emerald-50 p-8 rounded-3xl shadow-sm border border-emerald-100">
+                    <div class="flex text-gold-500 mb-6 text-xl">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-gray-700 text-lg italic mb-8">"Toko sembako saya akhir-akhir ini sepi & hawanya panas, sering ribut. Setelah ditabur garam ini di pojok toko, alhamdulillah hawa toko lebih adem."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-emerald-200 rounded-full flex items-center justify-center text-emerald-800 font-bold text-xl">W</div>
+                        <div>
+                            <h5 class="font-bold text-gray-800 text-lg">Ibu Wati</h5>
+                            <span class="text-base text-gray-600">Wirausaha, Surabaya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-base text-gray-500">*Hasil dapat berbeda pada setiap orang. Kesembuhan mutlak milik Allah SWT.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-emerald-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-center text-emerald-900 mb-12">Pertanyaan yang Sering Diajukan</h2>
+            
+            <div class="space-y-6">
+                <!-- Item 1 -->
+                <div class="border-2 border-emerald-100 rounded-2xl overflow-hidden bg-white">
+                    <button class="faq-btn w-full px-8 py-6 text-left font-bold text-gray-800 text-xl flex justify-between items-center hover:bg-emerald-50 transition focus:outline-none">
+                        Apakah boleh dikonsumsi (dimakan)?
+                        <i class="fa-solid fa-chevron-down text-emerald-600 text-2xl transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-8 py-6 border-t border-gray-100 text-gray-700 text-lg leading-relaxed">
+                        Kami lebih merekomendasikan Garam Ruqyah ini untuk penggunaan luar seperti mandi, rendaman, dan pel lantai karena diformulasikan dari garam laut berbutir agak kasar. Namun, sangat aman jika tidak sengaja terminum (misal saat kumur) karena ini 100% garam murni tanpa bahan kimia.
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="border-2 border-emerald-100 rounded-2xl overflow-hidden bg-white">
+                    <button class="faq-btn w-full px-8 py-6 text-left font-bold text-gray-800 text-xl flex justify-between items-center hover:bg-emerald-50 transition focus:outline-none">
+                        Bagaimana cara menyimpannya?
+                        <i class="fa-solid fa-chevron-down text-emerald-600 text-2xl transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-8 py-6 border-t border-gray-100 text-gray-700 text-lg leading-relaxed">
+                        Simpan di tempat yang kering dan sejuk, hindarkan dari sinar matahari langsung. Pastikan kemasan (ziplock) selalu tertutup rapat setelah digunakan agar garam tidak mencair karena udara lembap. Tidak perlu disimpan di dalam kulkas.
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="border-2 border-emerald-100 rounded-2xl overflow-hidden bg-white">
+                    <button class="faq-btn w-full px-8 py-6 text-left font-bold text-gray-800 text-xl flex justify-between items-center hover:bg-emerald-50 transition focus:outline-none">
+                        Bolehkah dibuang di kamar mandi setelah dipakai?
+                        <i class="fa-solid fa-chevron-down text-emerald-600 text-2xl transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-8 py-6 border-t border-gray-100 text-gray-700 text-lg leading-relaxed">
+                        Boleh. Air bekas mandi atau rendaman kaki bisa dibuang langsung ke saluran pembuangan kamar mandi. Tidak ada pantangan mengenai pembuangan air ruqyah yang telah digunakan ke tubuh untuk tujuan pengobatan.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-emerald-100 py-16 border-t-4 border-gold-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fa-solid fa-leaf text-emerald-500 text-3xl"></i>
+                    <span class="font-serif font-bold text-2xl text-white">Al-<span class="text-gold-500">Fajr</span></span>
+                </div>
+                <p class="text-lg text-emerald-200/90 mb-8 leading-relaxed">
+                    Penyedia produk herbal dan thibbun nabawi terpercaya untuk menemani ikhtiar sehat keluarga Muslim Indonesia.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-12 h-12 rounded-full bg-emerald-800 flex items-center justify-center text-xl hover:bg-emerald-600 transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-emerald-800 flex items-center justify-center text-xl hover:bg-emerald-600 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-emerald-800 flex items-center justify-center text-xl hover:bg-emerald-600 transition"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold text-xl mb-6">Tautan Cepat</h4>
+                <ul class="space-y-4 text-lg">
+                    <li><a href="#manfaat" class="hover:text-gold-500 transition">Manfaat Produk</a></li>
+                    <li><a href="#cara-pakai" class="hover:text-gold-500 transition">Cara Penggunaan</a></li>
+                    <li><a href="#produk" class="hover:text-gold-500 transition">Pemesanan</a></li>
+                    <li><a href="#" class="hover:text-gold-500 transition">Peluang Keagenan</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold text-xl mb-6">Hubungi Kami</h4>
+                <ul class="space-y-5 text-lg">
+                    <li class="flex items-start gap-4">
+                        <i class="fa-solid fa-location-dot mt-1 text-emerald-500 text-xl"></i>
+                        <span>Jl. Sunnah Herbal No. 12, Jakarta Selatan, Indonesia</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i>
+                        <span>+62 812-3456-7890</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i class="fa-regular fa-envelope text-emerald-500 text-xl"></i>
+                        <span>admin@alfajr.id</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-emerald-800/50 text-center text-base text-emerald-400">
+            &copy; 2026 Al-Fajr Herbal. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20bertanya%20tentang%20Garam%20Ruqyah%20Al-Fajr" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center text-4xl shadow-2xl hover:bg-green-600 transition hover:-translate-y-1 z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Interactivity Script -->
+    <script>
+        // Navbar Scrolled State
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Toggle
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-content').forEach(c => {
+                    if(c !== content) c.classList.add('hidden');
+                });
+                document.querySelectorAll('.faq-btn i').forEach(i => {
+                    if(i !== icon) i.style.transform = 'rotate(0deg)';
+                });
+
+                // Toggle current FAQ
+                if(content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Fungsi Pilih Paket (Otomatis memilih dropdown saat tombol harga diklik)
+        function pilihPaket(namaPaket) {
+            const selectPaket = document.getElementById('paket');
+            for(let i = 0; i < selectPaket.options.length; i++) {
+                if(selectPaket.options[i].text.includes(namaPaket)) {
+                    selectPaket.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // Handle Pengiriman Form ke WhatsApp
+        document.getElementById('formPemesanan').addEventListener('submit', function(e) {
+            e.preventDefault(); // Mencegah reload halaman
+            
+            // Mengambil nilai input
+            const nama = document.getElementById('nama').value;
+            const nowa = document.getElementById('nowa').value;
+            const kecamatan = document.getElementById('kecamatan').value;
+            const paketDropdown = document.getElementById('paket');
+            const paket = paketDropdown.options[paketDropdown.selectedIndex].text;
+            
+            // NOMOR WHATSAPP ADMIN (GANTI DENGAN NOMOR ANDA)
+            const nomorAdmin = "6281234567890"; 
+            
+            // Format Pesan WhatsApp
+            const pesan = `Halo Admin Al-Fajr, saya ingin memesan Garam Ruqyah.%0A%0A*Data Pesanan:*%0ANama: ${nama}%0ANo. WA: ${nowa}%0AAlamat/Kecamatan: ${kecamatan}%0APesan: ${paket}%0A%0AMohon info ketersediaan dan total tagihannya ya. Terima kasih.`;
+            
+            // Buka link WhatsApp
+            window.open(`https://wa.me/${nomorAdmin}?text=${pesan}`, '_blank');
+        });
+    </script>
+</body>
+</html>
